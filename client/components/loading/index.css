@@ -1,0 +1,11 @@
+.loadingMan{
+    background-image: url(./sprite.png);
+    animation-name: charector-1;/* 动画名称 */
+    animation-iteration-count: infinite;/* 动画无限播放 */
+    animation-duration: 500ms;/* 动画运行的时间 */
+    animation-timing-function: steps(6);
+  }
+  @keyframes charector-1{
+    0% {background-position: left;}
+  100% {background-position: right;}
+  }

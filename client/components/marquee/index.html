@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>marquee</title>
+  <style>
+    .tf-marquee {
+      width: 100%;
+      overflow: hidden;
+      height: 25px;
+    }
+
+    .tf-marquee-box {
+      padding: 0;
+      margin: 0;
+      width: 100%;
+      height: auto;
+      /* white-space: nowrap; */
+    }
+
+    li {
+      margin: 0;
+      width: 100%;
+      display: inline-block;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="tf-marquee">
+    <ul class="tf-marquee-box">
+      <li>我是谁</li>
+      <li>我从哪里来</li>
+      <li>你猜啊</li>
+    </ul>
+  </div>
+  <script src="./dist/marquee.js"></script>
+  <script>
+    new Marquee({ ele: document.querySelector('.tf-marquee-box'), direction: 'up' })
+  </script>
+</body>
+
+</html>
